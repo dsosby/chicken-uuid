@@ -1,12 +1,12 @@
 Chicken UUID
 ============
 
-A Chicken Scheme implemention to generate UUIDs.
+A native Chicken Scheme implementation for generating UUIDs.
 
 Installation
 ------------
 
-Use chicken-install and the egg repository
+Use chicken-install and the egg repository.
 
     chicken-install uuid
 
