@@ -1,0 +1,6 @@
+salmonella.log
+uuid
+*.o
+*.so
+*.dll
+*.exe

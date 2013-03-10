@@ -1,5 +1,6 @@
 (module uuid
 	(export uuid-v4)
+	(import scheme chicken)
 
 (use extras srfi-13)
 
@@ -14,7 +15,5 @@
 	   [y-replace (lambda () (list-ref hex-vals (bitwise-ior (bitwise-and (randfn 16) #x08) #x03)))]
 	   [map-proc (lambda (c) (cond ((eq? c #\x) (x-replace)) ((eq? c #\y) (y-replace)) (else c)))])
     (string-map map-proc uuid-v4-pattern)))
-
-  
 
 )

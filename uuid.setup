@@ -1,0 +1,7 @@
+(compile -s -O2 -d1 uuid.scm -j uuid)
+(compile -s uuid.import.scm -O2 -d0)
+
+(install-extension
+ 'uuid
+ '("uuid.o" "uuid.so" "uuid.import.so")
+ '((version "0.1")))

@@ -1,0 +1,9 @@
+(
+    (license "BSD")
+    (category data)
+
+    (test-depends test)
+
+    (author "David Sosby")
+    (synopsis "A native implementation of UUID generation")
+)
