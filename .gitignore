@@ -1,5 +1,6 @@
 salmonella.log
 uuid
+uuid.import.scm
 *.o
 *.so
 *.dll

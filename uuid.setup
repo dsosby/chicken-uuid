@@ -3,5 +3,5 @@
 
 (install-extension
  'uuid
- '("uuid.o" "uuid.so" "uuid.import.so")
+ '("uuid.so" "uuid.import.so")
  '((version "0.1")))
