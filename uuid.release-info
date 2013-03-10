@@ -1,3 +1,3 @@
 (repo git "git://github.com/dsosby/chicken-{egg-name}.git")
-(uri targz "https://github.com/dsosby/chicken-{egg-name}/archive/chicken-{egg-release}.tar.gz")
+(uri targz "https://github.com/dsosby/chicken-{egg-name}/archive/release-{egg-release}.tar.gz")
 (release "0.1")
