@@ -1,4 +1,8 @@
-(use test srfi-1 irregex)
+(cond-expand
+  (chicken-5
+    (import test srfi-1 chicken.irregex chicken.load))
+  (else
+    (use test srfi-1 irregex)))
 
 (load-relative "../uuid.scm")
 (import uuid)
