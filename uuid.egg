@@ -1,0 +1,11 @@
+((author "David Sosby")
+ (license "BSD")
+ (synopsis "A native implementation of UUID generation")
+ (version "0.1.1")
+ (category data)
+ (dependencies srfi-13)
+ (component-options (csc-options "-O2" "-d1"))
+ (test-dependencies test srfi-1)
+ (components
+  (extension uuid
+   (modules uuid))))

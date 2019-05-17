@@ -1,10 +1,16 @@
 ;; Module for generation of UUIDs
 
 (module uuid
-	(export uuid-v4)
-	(import scheme chicken)
+	(uuid-v4)
+(import scheme)
 
-(use extras srfi-13)
+(cond-expand
+  (chicken-5
+    (import chicken.bitwise srfi-13)
+    (import (rename chicken.random (pseudo-random-integer random))))
+  (else
+    (import scheme chicken)
+    (use extras srfi-13)))
 
 (define hex-vals (string->list "0123456789abcdef"))
 (define uuid-v4-pattern "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx")
